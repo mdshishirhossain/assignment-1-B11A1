@@ -3,10 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
-body{
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Fira Sans", serif;
+    font-style: normal;
 }
 
 .header {
@@ -18,7 +22,11 @@ body{
 
 /* shared styles */
 
-.btn-secondary{
+.section-heading{
+    margin-bottom: 32px;
+}
+
+.btn-secondary {
     background-color: transparent;
     color: #006A50;
     border: 1px solid #006A50;
@@ -30,13 +38,13 @@ body{
     cursor: pointer;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     border: 1px solid #006A50;
     background-color: #006A50;
     color: #ffffff;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #006A50;
     color: #ffffff;
     padding: 15px 30px;
@@ -48,7 +56,7 @@ body{
     cursor: pointer;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: transparent;
     border: 1px solid #006A50;
     color: #006A50;
@@ -63,30 +71,61 @@ nav {
     padding: 30px 0;
 }
 
-.nav-title{
+.nav-title {
     font-size: 32px;
 }
 
 
 /* styles for hero section */
 
-.hero-section{
+.hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #C6E4D6;
     padding: 80px 60px;
     border-radius: 24px;
+    margin-bottom: 80px;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     color: rgba(14, 14, 14, 0.5);
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.hero-title{
+.hero-title {
     color: #0E0E0E;
     font-size: 56px;
     margin-bottom: 24px;
+}
+
+/* styles for pillars */
+
+.pillars {
+    display: flex;
+    gap: 24px;
+}
+
+.pillar {
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.pillar-img{
+    
+}
+
+.pillar-title{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: rgba(14, 14, 14, 0.8);
+}
+
+.pillar-info{
+    color: rgba(14, 14, 14, 0.7);
 }
