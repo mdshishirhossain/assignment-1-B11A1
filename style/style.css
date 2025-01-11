@@ -20,12 +20,16 @@ main {
     margin: 0 auto;
     font-family: "Fira Sans", serif;
     font-style: normal;
-    ban
 }
 
 /* shared styles */
 
 .section-heading {
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.section-info{
     margin-bottom: 32px;
 }
 
@@ -188,7 +192,6 @@ nav {
 /* styles for vision */
 
 .visions {
-    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -234,4 +237,43 @@ nav {
     margin-top: 12px;
     margin-bottom: 4px;
     font-size: 20px;
+}
+
+.recent-news{
+    margin-top: 80px;
+    
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 32px;
+    padding: 48px;
+    border-radius: 24px;
+    background: #ffffff;
+    margin-bottom: 24px;
+
+}
+
+.news-img img{
+    border-radius: 24px;
+    object-fit: cover;
+    width: 408px;
+}
+.news-2{
+    flex-direction: row-reverse;
+}
+
+.news-title{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.news-logo, .news-date{
+    margin-bottom: 12px;
+}
+
+.news-info{
+    margin-bottom: 32px;
 }
