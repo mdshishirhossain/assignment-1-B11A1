@@ -7,22 +7,25 @@
 }
 
 body {
-    max-width: 1280px;
+    /* max-width: 1280px;
     margin: 0 auto;
     font-family: "Fira Sans", serif;
-    font-style: normal;
+    font-style: normal; */
+    background-color: #F5F5F5;
 }
 
-.header {
+header,
+main {
     max-width: 1280px;
     margin: 0 auto;
     font-family: "Fira Sans", serif;
     font-style: normal;
+    ban
 }
 
 /* shared styles */
 
-.section-heading{
+.section-heading {
     margin-bottom: 32px;
 }
 
@@ -60,6 +63,57 @@ body {
     background-color: transparent;
     border: 1px solid #006A50;
     color: #006A50;
+}
+
+.btn-1 {
+    background-color: #5490F5;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: 1px solid #5490F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: transparent;
+    border: 1px solid #5490F5;
+    color: #5490F5;
+}
+
+.btn-2 {
+    background-color: #09A15C;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: 1px solid #09A15C;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: transparent;
+    border: 1px solid #09A15C;
+    color: #09A15C;
+}
+
+.btn-3 {
+    background-color: #FFC239;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: 1px solid #FFC239;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    background-color: transparent;
+    border: 1px solid #FFC239;
+    color: #FFC239;
 }
 
 /* styles for nav */
@@ -102,6 +156,10 @@ nav {
 
 /* styles for pillars */
 
+.pillars-section {
+    margin-bottom: 80px;
+}
+
 .pillars {
     display: flex;
     gap: 24px;
@@ -115,17 +173,65 @@ nav {
     background: #ffffff;
 }
 
-.pillar-img{
-    
-}
-
-.pillar-title{
+.pillar-title,
+.vision-title {
     margin-top: 25px;
     margin-bottom: 12px;
     font-size: 20px;
     color: rgba(14, 14, 14, 0.8);
 }
 
-.pillar-info{
+.info-color {
     color: rgba(14, 14, 14, 0.7);
+}
+
+/* styles for vision */
+
+.visions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.vision {
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    max-width: 410px;
+}
+
+.vision-1 {
+    background-color: rgba(84, 144, 245, 0.2);
+}
+
+.vision-2 {
+    background-color: rgb(198, 228, 214);
+}
+
+.vision-3 {
+    background-color: rgb(247, 235, 207);
+}
+
+.btn {
+    margin-top: 48px;
+}
+
+.dr-yunus-speech {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background-color: #ffffff;
+    background-image: url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position: 2% 12%;
+    padding: 48px 24px;
+    
+}
+
+.speech-heading{
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 20px;
 }
