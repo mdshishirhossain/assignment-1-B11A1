@@ -7,19 +7,20 @@
 }
 
 body {
-    /* max-width: 1280px;
     margin: 0 auto;
     font-family: "Fira Sans", serif;
-    font-style: normal; */
+    font-style: normal;
     background-color: #F5F5F5;
 }
 
 header,
-main, footer {
+main {
     max-width: 1280px;
     margin: 0 auto;
-    font-family: "Fira Sans", serif;
-    font-style: normal;
+}
+
+footer{
+    background-color: #ffffff;
 }
 
 /* shared styles */
@@ -174,6 +175,7 @@ nav {
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
     background: #ffffff;
+    width: 25%;
 }
 
 .pillar-title,
@@ -244,7 +246,7 @@ nav {
 .news{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     gap: 32px;
     padding: 48px;
     border-radius: 24px;
@@ -264,15 +266,17 @@ nav {
 
 .news-title{
     font-size: 32px;
-    margin-bottom: 12px;
-}
-
-.news-logo, .news-date{
-    margin-bottom: 12px;
 }
 
 .news-info{
-    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+
+.news-description{
+    margin-bottom: 30px;
 }
 
 .donate-section{
@@ -357,11 +361,12 @@ footer{
 .footer-contact ul{
     list-style: none;
     display: flex;
-    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+    padding: 24px;
 }
 
-.footer-contact {
-    
-    margin: 0 auto;
+hr{
+    opacity: 0.3;
 }
 
